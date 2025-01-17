@@ -1,0 +1,9 @@
+.contact-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  & div{
+    width: 48%;
+  }
+}

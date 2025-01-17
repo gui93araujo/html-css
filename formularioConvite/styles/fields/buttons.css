@@ -1,0 +1,20 @@
+.actions-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: var(--text-heading);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: var(--brand-dark);
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  position: relative;
+}

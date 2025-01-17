@@ -1,0 +1,34 @@
+input, textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  outline: 1px solid;
+
+  padding: .75rem 1rem;
+
+  color: var(--input-stroke);
+  font: var(--ff-body);
+  background: var(--input-base);
+
+  resize: none;
+}
+
+label {
+  font: var(--ff-body);
+  color: var(--text-body);
+  font-size: 1rem;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.event-data {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  
+  & div {
+    width: 48%;
+  }
+}

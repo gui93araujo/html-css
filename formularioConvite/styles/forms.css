@@ -1,0 +1,27 @@
+@import url(fields/index.css);
+
+fieldset {
+  border: none;
+
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font: 600 1.25rem/1.25 var(--ff-heading);
+}
+
+& .event-info-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: .75rem; 
+  margin-bottom: 1rem;
+  color: var(--text-heading);
+  & img {
+    height: 24px;
+    width: 24px;
+  }
+
+ }

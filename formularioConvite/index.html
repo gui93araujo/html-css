@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img src="assets/img/Logo.svg" alt="" />
+            <h1>Festivite</h1>
+            <p>Crie um convite digital para o seu evento</p>
+          </header>
+        </div>
+      </aside>
+      <main>
+        <div class="main-container">
+          <h1>Crie seu convite</h1>
+
+          <form>
+            <fieldset class="event-info">
+              <div class="event-info-title">
+                <img src="assets/icons/calendar.svg" alt="" srcset="" />
+                <legend>Sobre o evento</legend>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input
+                  id="title"
+                  name="title"
+                  type="text"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="input-wrapper event-data">
+                <div>
+                  <label for="start-event">Ínicio</label>
+                  <input type="date" id="start-event" name="start-event" />
+                </div>
+                <div>
+                  <label for="end-event">Fim</label>
+                  <input type="date" id="end-event" name="end-event" />
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="description">Descrição</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  placeholder="Escreva os detalhes do evento"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <div class="event-info-title">
+                <img src="assets/icons/contact.svg" alt="" srcset="" />
+                <legend>Dados Contato</legend>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Nome completo"
+                />
+              </div>
+
+              <div class="input-wrapper contact-wrapper">
+                <div>
+                  <label for="email">E-mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+                <div>
+                  <label for="phone">Telefone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="(99) 99999-9999"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <footer>
+              <div class="actions-wrapper">
+                <button class="btn-primary" type="submit">
+                  <img src="assets/icons/ticket.svg" alt="" />
+                  Gerar convite
+                </button>
+              </div>
+            </footer>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
