@@ -1,0 +1,82 @@
+.colors {
+  display: flex;
+  flex-direction: column;
+
+  .color {
+    display: flex;
+    gap: 1rem;
+
+    .color-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 1.5rem;
+      background-color: var(--shape-button);
+    }
+
+    & input {
+      appearance: none;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      padding: 1rem;
+
+      & :has(:checked) {
+        .color-box {
+          border: 2px solid var(--brand-light);
+        }
+      }
+    }
+  }
+}
+
+.brand-light {
+  background-color: var(--brand-light);
+}
+
+.navy {
+  background-color: var(--navy);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+
+.fushia {
+  background-color: var(--fushia);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.danger {
+  background-color: var(--danger);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.lime {
+  background-color: var(--lime);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.cyan {
+  background-color: var(--cyan);
+}
+
+.color-box:hover {
+  border: 2px solid var(--brand-light);
+}
