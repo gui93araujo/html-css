@@ -5,7 +5,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  overflow: hidden;
+  height: 85vh;
+
+  @include responsive() {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .container-item-1 {
@@ -15,9 +20,26 @@
   align-items: flex-start;
 }
 
+.flex {
+  display: flex;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.align-items {
+  align-items: center;
+}
+
 .spiderman {
   width: 150%;
   transform: translate3d(-170px, 0, 0);
+
+  @include responsive() {
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .btn {
