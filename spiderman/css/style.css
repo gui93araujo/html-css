@@ -182,6 +182,20 @@ p {
   background: linear-gradient(101.47deg, #0a0c10 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #0a0c10 73.17%);
 }
 
+.bg-loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(225deg, #ea1d22 0%, #b31317 100%);
+}
+
 header {
   width: 100%;
   padding: 16px;
@@ -624,4 +638,26 @@ header {
 .py-5 {
   padding-top: 72px;
   padding-bottom: 72px;
+}
+
+.logo-spiderman {
+  fill: transparent;
+  animation: logo-spiderman 12s ease infinite alternate;
+}
+
+@keyframes logo-spiderman {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    stroke-dasharray: 100 0;
+    fill: transparent;
+  }
+  60%, 100% {
+    stroke-width: 0.3;
+    fill: #e5e9ef;
+  }
 }/*# sourceMappingURL=style.css.map */
