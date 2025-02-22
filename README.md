@@ -16,4 +16,4 @@ Principal objetivo desse repositório e praticar e criar sites com HTML e css.
 ## 💡Projetos Criados.
 
 1. Formulário (Não finalizado).
-2. Spiderman. 
+2. Spiderman (responsivo e com animações). 
