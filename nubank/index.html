@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Nubank</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,20 +12,30 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+3:ital,wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+
+    <script src="js/svg-inject.min.js"></script>
   </head>
   <body>
     <header id="header">
       <!-- HEADER MOBILE-->
       <nav class="navbar-mobile">
-        <div class="bx" id="bx"></div>
-        <div class="logo"></div>
+        <div class="bx" id="bx"><a href=""></a></div>
+        <div class="logo">
+          <a href="">
+            <img src="svg/logonu.svg" alt="" onload="SVGInject(this)" />
+          </a>
+        </div>
         <a href="">Login</a>
       </nav>
 
       <!-- HEADER DESKTOP -->
       <nav class="navbar-desktop">
         <div class="navbar-desktop-item-1">
-          <div class="logo"></div>
+          <div class="logo">
+            <a href="">
+              <img src="svg/logonu.svg" alt="" onload="SVGInject(this)" />
+            </a>
+          </div>
           <ul class="menu-desktop">
             <li class="menu-item" id="menu-item-1">
               <a href="" class="nav-link-desktop">Nubank</a>
@@ -71,7 +82,7 @@
           </ul>
         </div>
         <div class="navbar-desktop-item-2">
-          <a href="" class="btn">Quero ser Nubank</a>
+          <a href="" class="btn mr-2">Quero ser Nubank</a>
           <a href="">Login</a>
         </div>
       </nav>
@@ -79,14 +90,97 @@
       <!-- MENU MOBILE-->
       <nav class="menu-mobile" id="menu-mobile">
         <ul class="nav-list-mobile">
-          <li><a href="" class="nav-link-mobile">Nubank</a></li>
-          <li><a href="" class="nav-link-mobile">Conta Digital</a></li>
-          <li><a href="" class="nav-link-mobile">Pra você</a></li>
-          <li><a href="" class="nav-link-mobile">Quero ser Nubank</a></li>
-          <li><a href="" class="nav-link-mobile">Redes sociais</a></li>
+          <li class="mb-1"><a href="" class="nav-link-mobile">Nubank</a></li>
+          <li class="mb-1">
+            <a href="" class="nav-link-mobile">Conta Digital</a>
+          </li>
+          <li class="mb-1"><a href="" class="nav-link-mobile">Pra você</a></li>
+          <li class="mb-1">
+            <a href="" class="nav-link-mobile">Quero ser Nubank</a>
+          </li>
+          <li class="mb-1">
+            <a href="" class="nav-link-mobile">Redes sociais</a>
+          </li>
+          <li class="mt-3 flex-center">
+            <a href="">
+              <img
+                src="svg/icon-facebook.svg"
+                class="mx-1"
+                onload="SVGInject(this)"
+              />
+            </a>
+            <a href="">
+              <img
+                src="svg/icon-youtube.svg"
+                class="mx-1"
+                onload="SVGInject(this)"
+              />
+            </a>
+            <a href="">
+              <img
+                src="svg/icon-instagram.svg"
+                class="mx-1"
+                onload="SVGInject(this)"
+              />
+            </a>
+            <a href="">
+              <img
+                src="svg/icon-twitter.svg"
+                class="mx-1"
+                onload="SVGInject(this)"
+              />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <!-- HERO SECTION -->
+    <main class="container hero py-5">
+      <div class="flex-item-1 py-3">
+        <h1>Ser Nubank é reiventar sua vida financeira.</h1>
+        <p class="my-2">
+          Conta com rendimento acima da poupança, cartão de crédito sem anuidade
+          e o melhor: resolva tudo pelo App.
+        </p>
+        <div class="flex-start">
+          <a href="" class="btn">Quero ser Nubank</a>
+          <a href="" class="">
+            <img src="svg/appstore.svg" class="ml-1" onload="SVGInject(this)" />
+          </a>
+          <a href="" class="">
+            <img
+              src="svg/playstore.svg"
+              class="ml-1"
+              onload="SVGInject(this)"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="flex-item-3 div-card flex-center py-4">
+        <img
+          src="svg/icon-card.svg"
+          class="icon-card-hero dropshadow"
+          alt=""
+          onload="SVGInject(this)"
+        />
+        <img
+          src="svg/icon-mobile.svg"
+          class="icon-mobile-hero dropshadow"
+          alt=""
+          onload="SVGInject(this)"
+        />
+        <img
+          src="svg/icon-contactless.svg"
+          class="icon-contactless-hero dropshadow"
+          alt=""
+          onload="SVGInject(this)"
+        />
+        <div class="card"></div>
+      </div>
+    </main>
+
+    <!-- JS -->
     <script src="js/app.js"></script>
   </body>
 </html>
